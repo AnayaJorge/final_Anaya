@@ -12,14 +12,54 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body onload="iniciado()">
-    <h1>Pre Entrega 03</h1>
+    
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto navegacion">
+				<li class="nav-item active">
+				  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+			  </ul>
+
+              
+               <ul class="ms-md-auto">
+                    <li class="submenu">
+                            <img width="30" src="./assets/img//edificio.png">
+                            <div id="inmuebles">
+                                    
+                                <table class="table tableInmuebles">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Nº</th>
+                                        <th scope="col">Unidad</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="listaUnidades">
+
+                                    </tbody>
+                                </table>
+                    
+                            </div>
+                    </li>
+                </ul>
+           
+	
+			</div>
+		</div>
+	  </nav>
+    <h1>Pre Entrega Final</h1>
     <hr class="nb-4">
 
-    <div class="row" style="margin-bottom: 1rem">
+    <div class="row m-2">
         <button type="button" class="btn btn-outline-primary w-25" onclick="agregar()">Agregar Boleto</button>
-        <button type="button" class="btn btn-outline-primary w-25" onclick="eliminar()">Eliminar Boleto</button>
-        <button type="button" class="btn btn-outline-primary w-25" onclick="buscar()">Buscar</button>
-        <input id="buscarBoleto" class="w-25" type="search" placeholder="Buscar"/>
+        <button type="button" id="buttonLookFor" class="btn btn-outline-primary w-25" onclick="buscar()">Buscar / Limpiar</button>
+        <input id="buscarBoleto" class="w-50" type="search" placeholder="Buscar"/>
     </div>
 
     <hr class="nb-4">
@@ -29,7 +69,8 @@
             
         </table>
         
-        <table id="Tabla2" class="table text-center">
+        <h3 id="titleFinanciación"></h3>
+        <table id="Tabla2" class="table text-center w-50"> 
 
         </table>
     </div>
